@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(217, 209, 209);
+    /* width: 250px; */
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 30px;
+    /* height: 100vh; */
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding-top: 90px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 86vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infocontainer {
+    /* background-color:blue; */
+    height: 73vh;
+    width: 76vw;
+    margin: 86px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.hello {
+    font-size: 3em;
+}
+
+.name {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about {
+    font-size: 2.5em;
+}
+
+.moreabout {
+    font-size: 2em;
+    margin-top: 22px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.buttons {
+    margin-top: 2.2em;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 7px 12px;
+    border-radius: 20px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+.btn-sm {
+    font-size: 10px;
+    padding: 7px 12px;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+.devPic img {
+    height: 73vh;
+}
+
+.contactform {
+    padding: 0 34px;
+    font-family: 'Roboto', sans-serif;
+    margin: 90px;
+
+}
+
+.contactform h1 {
+    margin: 8px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    
+    border-radius: 7px;
+    margin: 6px 0;
+    padding: 3px;
+}
+.contactform form{
+    margin: 0 40px;
+}
+#emailHelp {
+    font-size: 12px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 5px 5px;
+}
+
+.blogItem {
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 25px;
+}
+
+p {
+    font-family: 'Source Serif Pro', serif;
+}
+.intro{
+    margin: 60px 90px;
+}
+.intro h2 {
+    font-family: 'Roboto', sans-serif;
+    margin: 12px;
+}
+
+.intro p {
+    font-family: 'Source Serif Pro', serif;
+    margin: 12px;
+}
+
+.intro p1 {
+    margin: 12px;
+    font-size: 15px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.intro p2 {
+    margin: 12px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.skillcontainer {
+    padding: 12px;
+}
+
+.skillItem {
+    display: flex;
+}
+
+.skill {
+    width: 25px;
+    height: 25px;
+}
+
+.projectcontainer {
+    padding: 12px;
+}
+
+.projectItem {
+    display: flex;
+}
+
+.project {
+    width: 25px;
+    height: 25px;
+}
+
+.intro h3 {
+    margin: 6px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+ .sidebarGo {
+        transform: translate(-400px, 0px);
+        position: absolute;
+    } 
+.hamburger {
+    position: fixed;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: 2px;
+    top: 4px;
+    left: 7px;
+}
+.cross{
+    margin-left: 171px;
+    margin-top: 4px;
+}
+.ham{
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+ @media (max-width:1256px) {
+    * {
+         
+    }
+    .buttons{
+        font-size: 5px;
+    }
+    .devInfo{
+        font-size: 10px;
+    } 
+.devPic{
+    display: none;
+}
+ .intro,.contactform{
+    margin:50px 8px;
+ }
+}
